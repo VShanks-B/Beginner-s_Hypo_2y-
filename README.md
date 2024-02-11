@@ -28,3 +28,14 @@ Now to cover the coverage score as well, I added a combination of reciprocal of 
 All models have better scores mostly at 100 epochs of training, which is suspected to be overfitting. Only the Best model that has regularization has not overfit and has better performance with more training. 
 
 All the .pt files have been trained for the Tier-2 task.
+
+## To run the notebook 
+Import notebook to kaggle, and import these 3 datasets, which I have made for my ease
+
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff
+
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-1
+
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-2
+
+These 3 datasets contain all the files required to run the notebook
