@@ -29,6 +29,8 @@ All models have better scores mostly at 100 epochs of training, which is suspect
 
 All the .pt files have been trained for the Tier-2 task.
 
+I also tried to make and optimize a CGAN, but did not know how to write an optimal loss function for it.
+
 ## To run the notebook 
 Import notebook to kaggle, and import these 3 datasets, which I have made for my ease
 
