@@ -11,15 +11,17 @@ Then I used the cvae_example file to get some results working with tier_1 datase
 
 Setting KLD loss weight to zero : Everything seems to converge for X, but not very fast. KLD loss is very high . Even when trained once, and then setting Beta to zero, it starts exploding. KLD Loss ensures that a good latent space is established. Setting it to zero does not make sense.
 
-Latent_dims : This dictates how well the hidden features in the data are captured by the latent space, however, more latent_dims does not directly correlate to better performance. On tier_1 data, a model with 50 latent_dims performed slightly better than one with 100 latent dims.
+Latent_dims : This dictates how well the hidden features in the data are captured by the latent space, however, more latent_dims does not directly correlate to better performance. On tier_1 data, a model with 50 latent_dims performed better than one with 100 latent dims.
 
 Then I started experimenting with the number of layers in the model, and added some linear layers to both encoder and decoder, and added a convolutional layer and conv_transpose layer to the Decoder, this result was cvae_1.
+Best Result of CVAE 1 : 
+Recon 1
 
-After this, I decided to do away with the convolutional layers in the encoder and decided to stick to only Linear layers in the encoder. The same could not be done with the decoder as decoder does upsampling, and removing the conv_transpose layers seemed counter-intuitive to that idea. This file is Linear_1.
+After this, I decided to do away with the convolutional layers in the encoder and decided to stick to only Linear layers in the encoder. The same could not be done with the decoder as decoder does upsampling, and removing the conv_transpose layers is counter-intuitive to that idea. This file is Linear_1.
 
 Beyond_Linear uses the same encoder from Linear_1, but has more convolutional layers in the decoder. This model gave the highest scores after training for only a 100 epochs, but the performance dropped after more training.
 
-Skip is a model that just implemented Skip connections to check how well that worked 
+Skip is a model that just implemented Skip connections to check how well that worked.
 
 Putting together these models and their results, it seems that cvae_1’s encoder works best, and Beyond_Linear’s decoder. This is visible due to the fact that the linear encoder and models that used it had a poorer performance than cvae_1, except for Beyond_Linear. Combining these and adding some dropouts for regularization, the final model Best_model has been made.
 
