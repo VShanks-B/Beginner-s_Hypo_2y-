@@ -76,12 +76,15 @@ All the .pt files in the respective folders have been trained for the Tier-2 tas
 I also tried to make and optimize a CGAN, but did not know how to write an optimal loss function for it.
 
 ## To run the notebook 
-Import notebook to kaggle, and import these 3 datasets, which I have made for my ease
+Import notebook to kaggle, and import these 3 datasets, which I have made for my ease  
+Or you could just load the notebook from here.  
 
-https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff
+https://www.kaggle.com/vshashankbharadwaj/beginnner-s-hypo-cvae  
 
-https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-1
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff  
 
-https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-2
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-1  
 
-These 3 datasets contain all the files required to run the notebook
+https://www.kaggle.com/datasets/vshashankbharadwaj/hypo-stuff-tier-2  
+
+The latter 3 are datasets containing all the files required to run the notebook
