@@ -69,6 +69,8 @@ Lin2 Score  | 0.8465821156579041 | 0.6104851900220721 |
 
 I have also tried cosine similarity, but it did not work as well.
 
+Lastly, a parameter 'eta' is mentioned in the notebook, which is supposed to be a weight for the linearity penalty, but since that was added after the duration of the challenge, it is set to zero in the current version of the notebook(V11).
+
 All models have better scores mostly at 100 epochs of training, which is suspected to be overfitting. Only the Best model that has regularization has not overfit and has better performance with more training. 
 
 All the .pt files in the respective folders have been trained for the Tier-2 task.
